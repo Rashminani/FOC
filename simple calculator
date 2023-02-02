@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+	int a,b,c=0;
+	char op;
+	printf("calculator program");
+	printf("\n+add\n-sub\n*mul\n/div\n");
+	printf("Enter a operator symbol: ");
+	scanf("%c",&op);
+	printf("Enter a value: ");
+	scanf("%d",&a);
+	printf("Enter b value: ");
+	scanf("%d",&b);
+	scanf("%d%d",&a,&b);
+	switch(op)
+{
+case '+' :
+c=a+b;
+break;
+case '-' :
+c=a-b;
+break;
+case '*' :
+c=a*b;
+break;
+case '/' :
+c=a/b;
+break;
+}
+printf("\nthe result is %d",c);
+getch();
+}
